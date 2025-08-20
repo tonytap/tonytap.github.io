@@ -1,0 +1,120 @@
+:root {
+    --cfont: 16px;
+    --fontfam: monospace;
+    --textmar: 40px;
+    --hoverColor: #cf0000;
+    --buttonSize:24px;
+    --bgc: white;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.project {
+    width: 100%;
+    margin: 40px 0;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+body {
+    background-color: var(--bgc);
+    position: relative;
+    margin: var(--textmar);
+    padding: 0px;
+    overflow-y: auto;
+}
+
+ul li a:hover {
+    color: var(--hoverColor);
+}
+/* Your existing styles */
+ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--fontfam);
+    color: #000000;
+    padding: 10px 20px; /* updated padding */
+    transition: color 0.4s;
+}
+
+h1 {
+    font-size: 18px;
+    font-family: var(--fontfam);
+    color: #000000;
+    padding: 10px 20px;
+    font-weight: normal;
+    text-align: center
+}
+
+/* List items displayed horizontally */
+ul li {
+    display: inline;
+}
+
+/* Center the navbar */
+nav {
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bgc); /* adding a background color to ensure the content below doesn't show through */
+    z-index: 100; /* ensures the navbar stays above other content */
+}
+
+body {
+    padding-top: 60px; /* Adjust this value to match the height of your navbar */
+}
+
+.common {
+    font-family: var(--fontfam);
+    font-size: var(--cfont);
+    width: calc(100% - 300px);
+    line-height: 1.5em;
+}
+
+body {
+    min-height: 100vh;
+}
+
+video, iframe {
+    box-shadow: 4px 4px 10px rgb(81, 31, 31);
+    border-radius: 8px;
+    max-width: 100%; /* This ensures the video doesn't overflow its container */
+    max-height: 95%; /* Adjust as needed to leave some space for other content */
+    margin: auto; /* This helps center the video in the flex container */
+    display: block;
+    margin: 0 auto;
+}
+
+
+.video-description {
+    font-family: var(--fontfam);
+    margin-top: 0px;   /* Adjust the margin as per your design */
+    text-align: justify;
+    padding-bottom: 60px;      /* Provides some space around the text */
+    max-width: 50%;     /* Ensures the description does not span the full width of its container, making it easier to read. Adjust as needed. */
+    margin-left: 450px;
+    margin-right: 450px;
+    font-size: var(--cfont);
+}
+
+.video-container {
+    display: flex;
+    align-items: center; /* Vertically aligns the video and buttons in the middle */
+    justify-content: center; /* Horizontally centers the items */
+    gap: 10px; /* Adjust this value for spacing between video and buttons */
+}
+
+
+a {
+    text-decoration: underline;
+    text-decoration-color: red;
+    color: inherit;  /* Keeps the text color unchanged */
+}

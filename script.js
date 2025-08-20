@@ -1,0 +1,1 @@
+// All projects are now visible by default - no navigation needed

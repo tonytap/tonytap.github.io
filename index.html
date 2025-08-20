@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div id="navbar"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  $(function(){
+  $("#navbar").load("navbar.html");
+  });
+  </script>
+</head>
+<body>
+
+  <div class="project">
+    <h1>LP Morph (<a href="https://github.com/ayh2bxa/lp_morph" target="_blank">Code</a>, <a href="https://github.com/ayh2bxa/lp_morph/releases/tag/lpmorph_081925" target="_blank">Download</a>)</h1>
+    <p class="video-description">"LP Morph" is a sound morphing plugin based on an efficient speech signal synthesis technique called linear predictive coding (LPC). The LPC model approximates a filter to represent the formant characteristics of input speech, then applies the filter on an excitation signal to synthesise a compressed version of speech. This plugin explores the creative potential of LPC by applying it on non-speech inputs and allowing real-time control of its parameters. The output sound imposes the characteristics of input on the excitation, often accompanied by a very glitchy feel. </p>
+    <video width="640" height="360" controls>
+        <source src="video-demos/lpmorph_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project">
+    <h1>Carnage & Invader @ <a href="https://quantumdsp.com/collections/digital-amplifiers" target="_blank">Quantum DSP</a></h1>
+    <p class="video-description"> Created from scratch two AI guitar amps, undertook every technical aspect of the product: from DSP, GUI to code signing, testing, and cross-platform release.</p>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/QN_kIH5SqA0?si=wsnzGmhgkno0Jh8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/4LANZbo-8UY?si=LNARM-ozLjAQtPj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <div class="project">
+    <h1>Stochaostic Process</h1>
+    <p class="video-description">"Stochaostic Process" is a drum machine plugin in its early development phase. Intended to create glitchy beats, </p>
+    <video width="640" height="360" controls>
+        <source src="video-demos/lpmorph_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project">
+    <h1>Transformer voice effect (<a href="https://github.com/ayh2bxa/transformer_voice_effect" target="_blank">Code</a>)</h1>
+    <p class="video-description">A real-time C++ program to emulate the deep robotic voices of the Transformers. The samples used are chosen from FL Studio's built-in sample packs.</p>
+    <video width="640" height="360" controls>
+        <source src="video-demos/transformer-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project">
+    <h1>Real-time AI acoustic echo cancellation (<a href="https://github.com/ayh2bxa/realtime_nkf_aec" target="_blank">Code</a>)</h1>
+    <p class="video-description">A C++ implementation of the <a href="https://arxiv.org/abs/2207.11388" target="_blank">NKF-AEC</a> model. Official source code is in Python.
+    </p>
+    <video width="640" height="360" controls>
+      <source src="video-demos/rtnkf-demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project">
+    <h1>Filter-dependent point cloud audio visualisation</h1>
+    <p class="video-description">This audio visualisation work features a filter that controls granularity of point cloud. You can draw the filter shape arbitrarily with your mouse. The more low-frequency content the filter preserves, the larger an individual point. The music used is an excerpt from my single <a href="https://www.youtube.com/watch?v=fVlBo7j8zts" target="_blank">"20 Dreams"</a>, and the photo used for the visualisation is taken by myself.</p>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/dYJhLMRZFKc?si=BGl5kQK6XRSS9kEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
