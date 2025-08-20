@@ -118,3 +118,82 @@ a {
     text-decoration-color: red;
     color: inherit;  /* Keeps the text color unchanged */
 }
+
+.tab-container {
+    margin-top: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 15px 30px;
+    font-family: var(--fontfam);
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    color: var(--hoverColor);
+}
+
+.tab-button.active {
+    border-bottom-color: var(--hoverColor);
+    color: var(--hoverColor);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-card {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-color: var(--hoverColor);
+}
+
+.project-card h3 {
+    margin: 0 0 10px 0;
+    font-family: var(--fontfam);
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.project-card p {
+    margin: 0;
+    font-family: var(--fontfam);
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
